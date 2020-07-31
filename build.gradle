@@ -21,6 +21,11 @@ allprojects {
     }
 }
 
+// TODO: it's also very important that ATF shares exactly the same version w/ espresso core
+ext {
+    espressoVersion = "3.3.0-rc01"
+}
+
 task clean(type: Delete) {
     delete rootProject.buildDir
 }
